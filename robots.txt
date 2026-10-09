@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ozonwankwoemmanuel12-ship-it.github.io/portfolio/sitemap.xml

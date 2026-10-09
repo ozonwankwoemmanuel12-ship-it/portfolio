@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Thoughtful everyday essentials, made to last. Discover the latest from Form & Field.">
+  <title>Form & Field — Considered goods for everyday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A little more thoughtful. Free delivery on orders over $100.</div>
+  <header class="header">
+    <a class="wordmark" href="#home" aria-label="Form and Field home"><span class="wordmark-icon">F<span>&</span>F</span><span>FORM & FIELD</span></a>
+    <button class="mobile-menu button-icon" id="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#shop" data-view="shop">Shop all</a>
+      <a href="#shop" data-category="Home">Home</a>
+      <a href="#shop" data-category="Accessories">Accessories</a>
+      <a href="#shop" data-category="Lifestyle">Lifestyle</a>
+      <a href="#story" data-view="story">Our story</a>
+      <a class="nav-account-link" href="#account-page" data-view="account">My account</a>
+    </nav>
+    <div class="header-actions">
+      <button class="button-icon search-toggle" id="search-toggle" aria-label="Search products">⌕</button>
+      <button class="button-icon account-toggle" id="account-toggle" aria-label="Your account">♙</button>
+      <button class="button-icon wishlist-toggle" id="wishlist-toggle" aria-label="Wishlist">♡<span class="count-badge" id="wishlist-count">0</span></button>
+      <button class="button-icon cart-toggle" id="cart-toggle" aria-label="Shopping bag">♧<span class="count-badge" id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <div class="search-bar" id="search-bar" hidden>
+    <label for="search-input">Search the collection</label>
+    <input type="search" id="search-input" placeholder="Try “ceramic” or “weekend bag”">
+    <button class="button-icon" id="search-close" aria-label="Close search">×</button>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY EDIT — NO. 04</p>
+        <h1>Good things,<br><em>well made.</em></h1>
+        <p>Considered objects for slower mornings, longer weekends, and all the little moments in between.</p>
+        <a href="#shop" class="button button-dark" data-view="shop">Explore the collection <span>↗</span></a>
+        <div class="hero-foot"><span>01 — 04</span><span>Designed for everyday living</span></div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1400&q=85" alt="Warm, sunlit modern living room with considered furnishings">
+        <span class="image-note">Objects with a little more intention.</span>
+      </div>
+      <span class="hero-index">EST. 2024<br>MADE TO KEEP</span>
+    </section>
+
+    <section class="category-band" aria-label="Shop by category">
+      <div class="section-kicker"><span>01 / FIND YOUR THING</span><span>Thoughtfully chosen, always</span></div>
+      <div class="category-list" id="category-list"></div>
+    </section>
+
+    <section class="shop-section page-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">MADE FOR THE EVERYDAY</p><h2 id="collection-title">The collection<span class="heading-period">.</span></h2></div>
+        <p>A small collection of useful, beautiful things.<br>Made to be reached for every day.</p>
+      </div>
+      <div class="shop-toolbar">
+        <button class="filter-trigger" id="filter-toggle">☷ <span>Filters</span> <span class="filter-count" id="filter-count"></span></button>
+        <span class="result-count" id="result-count">Loading collection…</span>
+        <label class="sort-label" for="sort-select">Sort by
+          <select id="sort-select">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+        </label>
+      </div>
+      <div class="filter-panel" id="filter-panel" hidden>
+        <label>Category <select id="category-filter"><option value="">All categories</option></select></label>
+        <label>Price range <select id="price-filter"><option value="">Any price</option><option value="0-50">Under $50</option><option value="50-100">$50–$100</option><option value="100-9999">$100 and over</option></select></label>
+        <button class="text-button" id="clear-filters">Clear all</button>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-products" hidden><span>Nothing here just yet.</span><p>Try adjusting your search or filters.</p><button class="button button-outline" id="empty-clear">Clear filters</button></div>
+    </section>
+
+    <section class="editorial" id="story">
+      <div class="editorial-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85" alt="Natural textures, flowers and objects arranged on a table" loading="lazy"></div>
+      <div class="editorial-copy"><p class="eyebrow">A NOTE FROM US</p><h2>Less, but<br><em>more meaningful.</em></h2><p>We believe the things we live with should earn their place. So we look for honest materials, enduring forms, and makers who care about the details.</p><a href="#shop" class="text-link" data-view="shop">A little more about us <span>↗</span></a></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">LETTERS, OCCASIONALLY</p><h2>Good things in your inbox.</h2>
+      <form id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></form>
+      <p class="newsletter-note">New arrivals, studio notes, and 10% off your first order.</p>
+    </section>
+
+    <section class="account-page page-section" id="account-page" hidden>
+      <p class="eyebrow">YOUR SPACE</p><h2 id="account-title">Your account.</h2>
+      <div id="account-content"></div>
+    </section>
+    <section class="orders-page page-section" id="orders-page" hidden>
+      <p class="eyebrow">THE PAPER TRAIL</p><h2>Your orders<span class="heading-period">.</span></h2><div id="orders-content"></div>
+    </section>
+    <section class="admin-page page-section" id="admin-page" hidden>
+      <p class="eyebrow">STORE MANAGEMENT</p><h2>Admin dashboard<span class="heading-period">.</span></h2><div id="admin-content"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main"><a class="wordmark footer-wordmark" href="#home"><span class="wordmark-icon">F<span>&</span>F</span><span>FORM & FIELD</span></a><p>Thoughtful goods for the everyday.<br>Made to keep, and made to matter.</p><div class="footer-links"><a href="#shop">Shop all</a><a href="#story">Our story</a><a href="mailto:hello@formandfield.example">Get in touch</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Form & Field</span><span>Considered in every detail.</span><span>Shipping worldwide · Returns within 30 days</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag<span class="heading-period">.</span></h2></div><button class="button-icon close-drawer" aria-label="Close bag">×</button></div>
+    <div class="drawer-content" id="cart-content"></div>
+    <div class="drawer-bottom" id="cart-bottom"></div>
+  </aside>
+
+  <dialog class="product-dialog" id="product-dialog" aria-label="Product details"><button class="dialog-close button-icon" aria-label="Close">×</button><div id="product-detail"></div></dialog>
+  <dialog class="auth-dialog" id="auth-dialog" aria-labelledby="auth-heading">
+    <button class="dialog-close button-icon" aria-label="Close">×</button><p class="eyebrow">WELCOME TO FORM & FIELD</p><h2 id="auth-heading">Your space.</h2>
+    <div class="auth-tabs"><button class="auth-tab active" data-auth="login">Sign in</button><button class="auth-tab" data-auth="register">Create account</button></div>
+    <form id="auth-form"><label id="name-field" hidden>Full name<input name="name" autocomplete="name"></label><label>Email address<input name="email" type="email" autocomplete="email" required></label><label>Password<input name="password" type="password" autocomplete="current-password" minlength="8" required></label><p class="form-error" id="auth-error" role="alert"></p><button class="button button-dark auth-submit" type="submit">Sign in <span>↗</span></button></form>
+    <p class="demo-note">Demo admin: admin@formandfield.test / Admin123!</p>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

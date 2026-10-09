@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Ozo | Frontend Developer — HTML, CSS, JavaScript, React</title>
+  <meta name="description" content="Joseph Ozo is a frontend developer in Nigeria building fast, accessible, responsive websites with HTML5, CSS3, JavaScript, React and Tailwind CSS. View projects, skills and services.">
+  <meta name="keywords" content="Joseph Ozo, frontend developer, web developer, JavaScript, React, Tailwind CSS, HTML, CSS, Nigeria developer, portfolio">
+  <meta name="author" content="Joseph Ozo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ozonwankwoemmanuel12-ship-it.github.io/portfolio/">
+
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Joseph Ozo Portfolio">
+  <meta property="og:url" content="https://ozonwankwoemmanuel12-ship-it.github.io/portfolio/">
+  <meta property="og:title" content="Joseph Ozo | Frontend Developer">
+  <meta property="og:description" content="Frontend developer building fast, accessible, responsive websites with HTML5, CSS3, JavaScript, React and Tailwind CSS.">
+  <meta property="og:image" content="https://ozonwankwoemmanuel12-ship-it.github.io/portfolio/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Joseph Ozo — Frontend Developer portfolio preview">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Joseph Ozo | Frontend Developer">
+  <meta name="twitter:description" content="Frontend developer building fast, accessible, responsive websites with HTML5, CSS3, JavaScript, React and Tailwind CSS.">
+  <meta name="twitter:image" content="https://ozonwankwoemmanuel12-ship-it.github.io/portfolio/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Joseph Ozo — Frontend Developer portfolio preview">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joseph Ozo",
+    "url": "https://ozonwankwoemmanuel12-ship-it.github.io/portfolio/",
+    "image": "https://avatars.githubusercontent.com/u/290995071?v=4",
+    "jobTitle": "Frontend Developer",
+    "email": "josephozonwankwo@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NG"
+    },
+    "sameAs": [
+      "https://github.com/ozonwankwoemmanuel12-ship-it",
+      "https://www.linkedin.com/in/ozonwankwo-chidiebube-a946a7418"
+    ],
+    "knowsAbout": ["HTML5", "CSS3", "JavaScript", "React", "Tailwind CSS", "Responsive Design", "Web Accessibility", "Git"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var theme = stored || system;
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Joseph Ozo — back to top">
+        <span class="brand-mark" aria-hidden="true">JO</span>
+        <span class="brand-text">Joseph<span class="brand-accent">Ozo</span></span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <svg class="icon icon-sun" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+          <svg class="icon icon-moon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon icon-menu" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+          <svg class="icon icon-close" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        <li><a class="mobile-nav-link" href="#home">Home</a></li>
+        <li><a class="mobile-nav-link" href="#about">About</a></li>
+        <li><a class="mobile-nav-link" href="#skills">Skills</a></li>
+        <li><a class="mobile-nav-link" href="#projects">Projects</a></li>
+        <li><a class="mobile-nav-link" href="#services">Services</a></li>
+        <li><a class="mobile-nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer" id="mobile-menu-social"></div>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="grid-overlay"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-badge reveal">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Available for freelance &amp; full-time work
+          </p>
+          <p class="hero-greeting reveal" style="--d:0.05s">Hi, my name is</p>
+          <h1 class="hero-title reveal" id="hero-title" style="--d:0.1s">
+            Joseph Ozo<span class="hero-dot">.</span>
+          </h1>
+          <p class="hero-role reveal" style="--d:0.18s">
+            I build <span class="typed-text" id="typed-text">front-end interfaces</span><span class="typed-cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-lead reveal" style="--d:0.26s">
+            A frontend developer based in Nigeria, crafting responsive, accessible and
+            performance-focused websites with modern HTML5, CSS3 and JavaScript.
+          </p>
+
+          <div class="hero-actions reveal" style="--d:0.34s">
+            <a class="btn btn-primary" href="#projects">
+              View my work
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero-social reveal" style="--d:0.42s" id="hero-social"></div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:0.3s">
+          <div class="avatar-frame">
+            <img class="hero-avatar" src="https://avatars.githubusercontent.com/u/290995071?v=4" alt="Portrait of Joseph Ozo, frontend developer" width="340" height="340" loading="eager" decoding="async">
+            <span class="avatar-ring" aria-hidden="true"></span>
+          </div>
+          <div class="floating-card floating-card-1" aria-hidden="true">
+            <span class="fc-icon">&lt;/&gt;</span>
+            <span>Clean, semantic code</span>
+          </div>
+          <div class="floating-card floating-card-2" aria-hidden="true">
+            <span class="fc-icon">&#9729;</span>
+            <span>Responsive by default</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Scroll down to about section">
+        <span class="mouse" aria-hidden="true"><span class="wheel"></span></span>
+        <span class="scroll-text" aria-hidden="true">Scroll</span>
+      </a>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Get to know me</p>
+          <h2 class="section-title" id="about-title">About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <div class="about-photo">
+              <img src="https://avatars.githubusercontent.com/u/290995071?v=4" alt="Joseph Ozo smiling at his workstation" width="420" height="420" loading="lazy" decoding="async">
+            </div>
+            <div class="about-experience-badge" aria-hidden="true">
+              <strong>20+</strong>
+              <span>Repos &amp; counting</span>
+            </div>
+          </div>
+
+          <div class="about-body">
+            <p class="about-lead reveal">
+              I'm a frontend developer who loves turning ideas into interfaces people
+              actually enjoy using. My work lives at the intersection of clean code,
+              thoughtful design and real-world accessibility.
+            </p>
+            <p class="reveal" style="--d:0.08s">
+              I started with plain HTML, CSS and JavaScript and grew into component-driven
+              development with React and utility-first styling with Tailwind CSS. From
+              calculators and quote machines to e-commerce frontends and weather apps, I
+              ship projects end to end: structure, style, logic and deployment.
+            </p>
+            <p class="reveal" style="--d:0.14s">
+              I care about websites that load fast, work on every screen size and stay
+              usable with a keyboard or screen reader — because good development should
+              work for everyone.
+            </p>
+
+            <dl class="about-facts reveal" style="--d:0.2s">
+              <div class="fact">
+                <dt>Based in</dt>
+                <dd>Nigeria (GMT+1)</dd>
+              </div>
+              <div class="fact">
+                <dt>Status</dt>
+                <dd><span class="pulse-dot" aria-hidden="true"></span>Open to opportunities</dd>
+              </div>
+              <div class="fact">
+                <dt>Focus</dt>
+                <dd>Frontend &amp; UI engineering</dd>
+              </div>
+              <div class="fact">
+                <dt>Core stack</dt>
+                <dd>HTML, CSS, JS, React, Tailwind</dd>
+              </div>
+            </dl>
+
+            <div class="about-stats reveal" style="--d:0.26s">
+              <div class="stat">
+                <span class="stat-value" data-count="22" data-suffix="+">0</span>
+                <span class="stat-label">GitHub repos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" data-count="15" data-suffix="+">0</span>
+                <span class="stat-label">Projects built</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" data-count="6" data-suffix="+">0</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value" data-count="100" data-suffix="%">0</span>
+                <span class="stat-label">Commitment</span>
+              </div>
+            </div>
+
+            <div class="about-actions reveal" style="--d:0.32s">
+              <a class="btn btn-primary" href="#contact">Let's talk</a>
+              <a class="btn btn-outline" href="https://github.com/ozonwankwoemmanuel12-ship-it" target="_blank" rel="noopener noreferrer">View GitHub profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">What I work with</p>
+          <h2 class="section-title" id="skills-title">Skills &amp; Technologies</h2>
+          <p class="section-sub">A toolkit built through hands-on projects — not just tutorials.</p>
+        </header>
+
+        <div class="skills-grid" id="skills-grid">
+          <noscript><p class="noscript-note">Enable JavaScript to view the full skills list, or visit my <a href="https://github.com/ozonwankwoemmanuel12-ship-it">GitHub profile</a>.</p></noscript>
+        </div>
+
+        <div class="skill-tags reveal">
+          <h3 class="skill-tags-title">Frequently used</h3>
+          <ul class="tag-cloud" id="tag-cloud"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Selected work</p>
+          <h2 class="section-title" id="projects-title">Featured Projects</h2>
+          <p class="section-sub">Every public project from my <a class="inline-link" href="https://github.com/ozonwankwoemmanuel12-ship-it" target="_blank" rel="noopener noreferrer">GitHub</a> — with live demos hosted on GitHub Pages.</p>
+        </header>
+
+        <div class="projects-grid" id="projects-grid">
+          <noscript><p class="noscript-note">Browse projects directly on <a href="https://github.com/ozonwankwoemmanuel12-ship-it">github.com/ozonwankwoemmanuel12-ship-it</a>.</p></noscript>
+        </div>
+
+        <div class="section-cta reveal">
+          <a class="btn btn-outline" href="https://github.com/ozonwankwoemmanuel12-ship-it?tab=repositories" target="_blank" rel="noopener noreferrer">
+            See all repositories
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">How I can help</p>
+          <h2 class="section-title" id="services-title">Services</h2>
+          <p class="section-sub">From first prototype to polished launch — end-to-end frontend delivery.</p>
+        </header>
+        <div class="services-grid" id="services-grid">
+          <noscript><p class="noscript-note">Service details available on request.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Let's build something</p>
+          <h2 class="section-title" id="contact-title">Get In Touch</h2>
+          <p class="section-sub">
+            Have a project, a role, or just an idea worth talking through? My inbox is
+            always open — reach me through any channel below.
+          </p>
+        </header>
+
+        <div class="contact-panel reveal">
+          <div class="contact-social" id="contact-social"></div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </span>
+              <div>
+                <span class="contact-detail-label">Location</span>
+                <span class="contact-detail-value">Nigeria (GMT+1) — Remote friendly</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+              </span>
+              <div>
+                <span class="contact-detail-label">Availability</span>
+                <span class="contact-detail-value"><span class="pulse-dot" aria-hidden="true"></span>Open to work &amp; freelance</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg>
+              </span>
+              <div>
+                <span class="contact-detail-label">Response time</span>
+                <span class="contact-detail-value">Usually within 24 hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <a class="btn btn-primary btn-lg" href="mailto:josephozonwankwo@gmail.com">Say hello via email</a>
+            <p class="contact-cta-note">I usually reply within 24 hours — let's talk about your next project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="brand" aria-label="Joseph Ozo — back to top">
+          <span class="brand-mark" aria-hidden="true">JO</span>
+          <span class="brand-text">Joseph<span class="brand-accent">Ozo</span></span>
+        </a>
+        <p class="footer-tagline">Frontend developer crafting accessible, responsive web experiences.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social" id="footer-social"></div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Joseph Ozo. All rights reserved.</p>
+      <p class="footer-note">Built with hand-written HTML5, CSS3 &amp; vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" hidden>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
